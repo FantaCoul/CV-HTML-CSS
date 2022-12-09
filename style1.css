@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+}
+
+ /* le corps de la page */
+body{
+	background: #c4c4c4;
+	font-size: 14px;
+	line-height: 20px;
+}
+
+ /* la page*/
+.page{
+	display: flex;
+	position: relative;
+	width: 650px;
+	height: 900px;
+	margin: 10px auto;
+	background: #fff;
+}
+ /* partie gauche de la page */
+.page .gauche{
+	width: 31%;
+	background: #3f3f3f;
+}
+
+ /* image de la partie gauche de la page*/
+.page .gauche .image{
+	width: 100%;
+}
+
+.page .gauche .image img{
+	width: 80%;
+	display: flex;
+	margin-left: 22px;
+	margin-top: 13px;
+}
+
+.double{
+	margin-top: -20px;
+	margin-left: 10px;
+}
+
+ /* partie icon et contact */
+.page .gauche .info{
+	color: #ffffff;
+	margin-top: 4px;
+}
+
+i{
+	margin-top: 2px;
+	margin-left: -15px;
+}
+
+ /* partie liste non ordonnée */
+.page .gauche .info ul li{
+	list-style-type: disc;
+}
+
+.page .gauche .font{
+	padding: 20px 25px;
+	font-size: 13px;
+	letter-spacing: 2px;
+}
+
+
+ /* partie COMPETENCE LANGUE ET LOISIRS */
+.page .gauche .titre{
+   font-weight: 600;
+   font-size: 15px;
+   line-height: 30px;
+   width: 155px;
+   height: 30px;
+   margin-left: -25px;
+   border-radius: 0px 60px 60px 0px;
+   background-color: #fff;
+   margin-top: 30px;
+   text-align: center;
+}
+
+ /* partie droite de la page */
+
+.page .droite{
+	width: 65%;
+	padding: 20px 40px;
+	color: #26252d;
+	margin-left: -30px;
+}
+
+ /* partie du prenom */
+.page .droite .nom{
+	color: #000000;
+	font-size: 30px;
+	margin-top: 15px;
+	text-transform: uppercase;
+	font-weight: 1000;
+	margin-bottom: 5px;
+	letter-spacing: 4px;
+}
+
+/* partie du Titre du poste recherché */
+.page .droite .role{
+	color: #000000;
+	font-size: 15px;
+	margin-top: 20px;
+	font-weight: 900;
+	margin-bottom: 5px;
+}
+
+/* partie du titre*/
+.page .droite .titre{
+	color: #000000;
+	font-size: 14px;
+	margin-bottom: 30px;
+	width: 415px;
+}
+
+/* partie des détails */
+.page .droite .details .titre{
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 27px;
+	color: #ffffff;
+	width: 405px;
+	height: 30px;
+	margin-left: -25px;
+	border-radius: 0px 60px 60px 0px;
+	background-color: #3f3f3f;
+	margin-top: 10px;
+	text-align: center;
+ }
+
+/* partie formation */
+.page .droite .date {
+	color: #000000;
+	font-size: 15px;
+	margin-bottom: 30px;
+	width: 455px;
+}
+
+
+
+
+/*Media Querries*/
+
+
+  /* MOBILE */
+@media only screen and (max-width: 600px) {
+
+	body{
+	margin: 0;
+	padding: 0;
+	}
+
+ /* la page*/
+.page{
+	position: relative;
+	display: grid;
+	grid-template-columns: 1fr;
+	margin: 0;
+	background: none;
+	width: 0px;
+	height: 0px;
+}
+
+ /* partie gauche de la page */
+.page .gauche{
+	background: #3f3f3f;
+	width: 483px;
+	position: relative;
+	height: 100%;
+	margin:  0;
+	padding: 0;
+	text-align: center;
+	
+}
+
+ /* image de la partie gauche de la page*/
+.page .gauche .image{
+	width: 100%;
+}
+
+.page .gauche .image img{
+	width: 83%;
+	display: block;
+	margin-left: 40px;
+	margin-top: 13px;
+}
+
+i{
+	margin-top: 2px;
+	margin-left: -200px;
+}
+
+ /* partie liste non ordonnée */
+.page .gauche .info ul li{
+	list-style-type: none;
+}
+
+
+ /* partie COMPETENCE LANGUE ET LOISIRS */
+.page .gauche .titre{
+   font-weight: 600;
+   font-size: 15px;
+   line-height: 30px;
+   width: 485px;
+   height: 30px;
+   margin-left: -27px;
+   border-radius: 0px 0px 0px 0px;
+   background-color: #fff;
+   margin-top: 30px;
+   text-align: center;
+}
+
+ /* partie droite de la page */
+
+.page .droite{
+	width: 513px;
+	padding: 20px 40px;
+	color: #26252d;
+	margin-left: -30px;
+	background-color: #ffffff;
+	text-align: center;
+}
+
+
+/* partie du titre*/
+.page .droite .titre{
+	color: #000000;
+	font-size: 14px;
+	margin-bottom: 30px;
+	width: 460px;
+	justify-content: center;
+}
+
+/* partie des détails */
+.page .droite .details .titre{
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 27px;
+	color: #ffffff;
+	width: 498px;
+	height: 30px;
+	margin-left: -25px;
+	border-radius: 0px 0px 0px 0px;
+	background-color: #3f3f3f;
+	margin-top: 10px;
+	text-align: center;
+ }
+
+	}
+
+  

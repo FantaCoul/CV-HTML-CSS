@@ -1,0 +1,8 @@
+{
+    "git.alwaysShowStagedChangesResourceGroup": true,
+    "git.postCommitCommand": "push",
+    "git.rememberPostCommitCommand": true,
+    "git.rebaseWhenSync": true,
+    "git.pullBeforeCheckout": true,
+    "git.alwaysSignOff": true
+}

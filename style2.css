@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+}
+
+ /* le corps de la page */
+body{
+	background: #c4c4c4;
+	font-size: 14px;
+	line-height: 20px;
+}
+
+.page1{
+	display: flex;
+	position: relative;
+	width: 650px;
+	height: 900px;
+	margin: 10px auto;
+	background: #fff;
+	}
+
+	
+
+.tete{
+	
+    position: absolute;
+    width: 655px;
+    height: 180px;
+    left: 0px;
+    top: 0px;
+
+	background: #AABEBB;
+}
+
+.gauche{
+	width: 31%;
+background: #454234;
+height: 720px;
+margin-top: -20px;
+}
+
+.page1 .tete .image{
+	width: 100%;
+}
+
+.page1 .tete .image img{
+	width: 23%;
+	display: flex;
+	margin-left: 25px;
+	margin-top: 13px;
+	height: 145px;
+	border-radius: 100%;
+	border:  3px solid white;
+}
+
+
+ /* partie du prenom */
+ .page1 .tete .resumer .nom{
+	color: #000000;
+	font-size: 30px;
+	margin-top: -138px;
+	text-transform: uppercase;
+	font-weight: 1000;
+	margin-bottom: 5px;
+	letter-spacing: 4px;
+	margin-left: 203px;
+}
+
+/* partie du Titre du poste recherché */
+.page1 .tete .resumer .role{
+	color: #000000;
+	font-size: 15px;
+	margin-top: 10px;
+	font-weight: 900;
+	margin-bottom: 5px;
+	margin-left: 203px;
+}
+
+/* partie du titre*/
+.page1 .tete .titre{
+	color: #000000;
+	font-size: 12px;
+	margin-bottom: 30px;
+	width: 435px;
+	margin-left: 205px;
+	text-align:justify;
+	margin-top: -5px;
+}
+
+.double{
+	margin-top: -25px;
+	margin-left: 15px;
+}
+
+ /* partie icon et contact */
+.page1 .gauche .contact {
+	color: #ffffff;
+	margin-top: 25px;
+	line-height: 25px;
+}
+
+i{
+	margin-top: 2px;
+	margin-left: -5px;
+	font-size: large;
+}
+
+ /* partie liste non ordonnée */
+.page1 .gauche .info ul li{
+	list-style-type: disc;
+	line-height: 30px;
+	margin-left: 18px;
+}
+
+.page1 .gauche .font{
+	padding: 20px 25px;
+	font-size: 11.5px;
+	letter-spacing: 2px;
+	color: white;
+}
+
+
+ /* partie COMPETENCE LANGUE ET LOISIRS */
+.page1 .gauche .titre{
+   font-weight: 600;
+   font-size: 15px;
+   line-height: 30px;
+   margin-top: 10px;
+   margin-left: 10px;
+   color: #ffffff;
+}
+
+.niveau{
+	background-color: rgb(255, 255, 255);
+	width: 4px;
+	height: 30px;
+	margin-left: -10px;
+}
+
+/* partie droite de la page */
+
+.droite{
+	width: 65%;
+
+	padding: 20px 40px;
+	color: #26252d;
+	margin-left: 180px;
+	margin-top: 200px;
+	line-height: 22px;
+}
+
+
+/* partie du titre*/
+.droite .titre{
+	color: #000000;
+	font-size: 14px;
+	margin-bottom: 30px;
+	width: 415px;
+}
+
+/* partie des détails */
+.droite .details .titre{
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 27px;
+	color: #000000;
+	width: 405px;
+	height: 30px;
+	margin-left: 10px;
+	margin-top: 10px;
+ }
+
+ .details{
+	background-color: rgb(0, 0, 0);
+	width: 3px;
+	height: 30px;
+	margin-left: -10px;
+ }
+
+/* partie formation */
+.droite .date {
+	color: #000000;
+	font-size: 15px;
+	margin-bottom: 30px;
+	width: 455px;
+}
+
+.droite .info{
+	margin-top: 10px;
+}
+
+
+
+/*Media Querries*/
+
+
+  /* MOBILE */
+  @media only screen and (max-width: 600px) {
+	.page1{
+		position: relative;
+	display: grid;
+	grid-template-columns: 1fr;
+	margin: 0;
+	background: none;
+	width: 0px;
+	height: 0px;
+
+		}
+	
+		
+	
+	.tete{
+		
+		position: relative;
+		width: 482px;
+		height: 350px;
+		left: 0px;
+		top: 0px;
+		background: #AABEBB;
+	}
+	
+	.gauche{
+		width: 483px;
+	background: #454234;
+	height: 700px;
+	margin-top: -10px;
+	}
+	
+	.page1 .tete .image{
+		width: 100%;
+	}
+	
+	.page1 .tete .image img{
+		width: 30%;
+		display: flex;
+		margin-left: 160px;
+		margin-top: 15px;
+		height: 145px;
+		border-radius: 100%;
+		border:  3px solid white;
+	}
+	
+	
+	 /* partie du prenom */
+	 .page1 .tete .resumer .nom{
+		color: #000000;
+		font-size: 30px;
+		margin-top: 20px;
+		text-transform: uppercase;
+		font-weight: 1000;
+		margin-bottom: 5px;
+		letter-spacing: 4px;
+		margin-left: 120px;
+	}
+	
+	/* partie du Titre du poste recherché */
+	.page1 .tete .resumer .role{
+		color: #000000;
+		font-size: 15px;
+		margin-top: 10px;
+		font-weight: 900;
+		margin-bottom: 5px;
+		margin-left: 150px;
+	}
+	
+	/* partie du titre*/
+	.page1 .tete .titre{
+		color: #000000;
+		font-size: 11px;
+		margin-bottom: 30px;
+		margin-left: 30px;
+		text-align:justify;
+		margin-top: -5px;
+	}
+	
+	 /* partie icon et contact */
+	.page1 .gauche .contact {
+		color: #ffffff;
+		margin-top: 5px;
+		line-height: 25px;
+		text-align: center;
+	}
+	
+	i{
+		margin-top: 2px;
+		margin-left: -135px;
+		font-size: large;
+	}
+	
+	 /* partie liste non ordonnée */
+	.page1 .gauche .info ul li{
+		list-style-type: none;
+		line-height: 30px;
+		margin-left: 18px;
+		text-align: center;
+	}
+	
+	.page1 .gauche .font{
+		padding: 20px 25px;
+		font-size: 11px;
+		letter-spacing: 2px;
+		color: white;
+	}
+	
+	
+	 /* partie COMPETENCE LANGUE ET LOISIRS */
+	.page1 .gauche .titre{
+	   font-weight: 600;
+	   font-size: 15px;
+	   line-height: 30px;
+	   margin-top: 10px;
+	   margin-left: 10px;
+	   color: #ffffff;
+	   text-align: center;
+	}
+	
+	.niveau{
+		background-color: rgb(255, 255, 255);
+		width: 107px;
+		height: 20px;
+		margin-left: -10px;
+	}
+	h3{
+		margin-top: 30px;
+	}
+	
+	/* partie droite de la page */
+	
+	.droite{
+		width: 498px;
+	
+		padding: 20px 40px;
+		color: #26252d;
+		margin-left: -15px;
+		margin-top: 700px;
+		line-height: 22px;
+		background: white;
+	}
+	
+	.droite .info{
+		margin-top: 10px;
+	}
+	
+	
+
+	}
+
+
+
+
+
